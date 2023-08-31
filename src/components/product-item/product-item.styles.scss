@@ -1,0 +1,70 @@
+/* Improve the Product Card Styling */
+.product-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px; /* Increase padding for more spacing */
+  margin-bottom: 20px;
+  background-color: #f7f7f7; /* Slightly lighter background color */
+  border-radius: 8px; /* Add rounded corners for a softer look */
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Improve the Image and Price/Rating Container */
+.image-price-rating-container {
+  display: flex;
+  align-items: center;
+
+  .title-container {
+    margin-bottom: 8px;
+    font-weight: bold; /* Make the title bold */
+    font-size: 18px; /* Increase font size */
+  }
+
+  .price-container {
+    margin-bottom: 8px; /* Reduce margin */
+    font-size: 16px; /* Adjust font size */
+    color: #ff6347; /* Change price color to a different shade */
+  }
+
+  img {
+    width: 160px; /* Slightly reduce image size */
+    margin-right: 20px;
+    border-radius: 8px; /* Add rounded corners to the image */
+  }
+}
+
+/* Improve the Description and Actions Container */
+.desc-actions {
+  width: 40%; /* Increase the width for more content */
+  position: relative;
+
+  .description-container {
+    margin-bottom: 12px; /* Adjust margin */
+    font-size: 14px; /* Adjust font size */
+  }
+
+  .action-container {
+    display: flex;
+    justify-content: flex-end; /* Align actions to the right */
+    position: absolute;
+    bottom: 8px; /* Move actions closer to the bottom */
+    right: 8px; /* Move actions closer to the right */
+
+    .action-icon {
+      img {
+        width: 20px; /* Slightly reduce icon size */
+        margin-right: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+/* Add Hover Effect for Product Cards */
+.product-card:hover {
+  transform: translateY(-4px); /* Slight lift on hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
+  background-color: #e4c0c0; /* Change background color on hover */
+}

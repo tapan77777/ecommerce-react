@@ -1,0 +1,51 @@
+/* Improve the Checkout Item Container Styling */
+.checkout-item-container {
+  width: 100%;
+  display: flex;
+  min-height: 100px;
+  border-bottom: 1px solid #e0e0e0; /* Use a softer border color */
+  padding: 15px 0;
+  font-size: 18px; /* Slightly reduce font size for better readability */
+  align-items: center;
+  transition: background-color 0.3s ease-in-out; /* Add a subtle hover effect */
+
+  &:hover {
+    background-color: #f9f9f9; /* Change background color on hover */
+  }
+
+  .image-container {
+    width: 20%; /* Reduce image container width for better alignment */
+    padding-right: 15px;
+
+    img {
+      width: 100%;
+      height: auto; /* Maintain aspect ratio */
+      border-radius: 5px; /* Add a slight border radius */
+    }
+  }
+
+  .name,
+  .quantity,
+  .price {
+    width: 20%; /* Equal width for these sections */
+  }
+
+  .quantity {
+    display: flex;
+    align-items: center;
+
+    .arrow {
+      cursor: pointer;
+      font-size: 20px; /* Increase arrow size */
+    }
+
+    .value {
+      margin: 0 10px;
+    }
+  }
+
+  .remove-button {
+    cursor: pointer;
+    font-size: 20px; /* Increase the remove button size */
+  }
+}

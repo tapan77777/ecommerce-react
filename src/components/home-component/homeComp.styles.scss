@@ -1,0 +1,28 @@
+/* Define a background color or image */
+.home-container {
+  background: linear-gradient(to bottom, #f0f0f0, #ffffff); /* Example gradient background */
+  padding: 20px; /* Add some padding for spacing */
+  border-radius: 10px; /* Rounded corners for a softer look */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  text-align: center; /* Center content horizontally */
+}
+
+/* Style the text inside the container */
+.home-container h1 {
+  color: #333; /* Text color */
+  font-size: 24px; /* Font size */
+  margin-bottom: 10px; /* Space between title and content */
+}
+
+.home-container p {
+  color: #666; /* Text color */
+  font-size: 18px; /* Font size */
+}
+
+/* Add hover effect for interactive elements */
+.home-container:hover {
+  transform: scale(1.05); /* Slight zoom-in effect on hover */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Customize other styles as needed */
